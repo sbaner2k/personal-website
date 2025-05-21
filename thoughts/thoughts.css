@@ -1,0 +1,110 @@
+/* Theme Toggle Button */
+.theme-toggle {
+    display: none;
+}
+
+/* Header */
+header {
+    padding-top: 1rem;
+    text-align: center;
+}
+
+/* Thoughts Page Specific Styles */
+.thoughts-container {
+    margin-top: 2rem;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 0;
+    padding: 0 2rem;
+}
+
+.article-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.article-item {
+    margin: 0;
+    padding: 0.2rem 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+.article-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.article-link:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.article-date {
+    font-family: var(--header-font);
+    font-size: 1rem;
+    color: #888;
+    white-space: nowrap;
+    width: 7rem;
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+}
+
+.article-title {
+    font-family: var(--header-font);
+    font-size: 1rem;
+    color: #fff;
+    margin: 0;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-link:hover .article-title,
+.article-link:hover .article-date {
+    color: var(--accent-color);
+}
+
+/* Active state for navigation */
+.nav a.active {
+    border-bottom: 2px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* Dark mode adjustments */
+.dark-theme .article-title {
+    color: #fff;
+}
+
+.dark-theme .article-date {
+    color: #aaa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .thoughts-container {
+        padding: 0 1rem;
+    }
+    
+    .article-date {
+        width: 6rem;
+        font-size: 0.9rem;
+    }
+    
+    .article-title {
+        font-size: 0.95rem;
+    }
+    
+    .article-link {
+        gap: 0.75rem;
+    }
+}
