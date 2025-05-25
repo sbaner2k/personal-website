@@ -137,7 +137,7 @@ nav a:hover {
     margin-top: 3rem;
     text-align: center;
     padding: 2rem 0;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .work-stack h3 {
@@ -155,12 +155,10 @@ nav a:hover {
 }
 
 .stack-logo {
-    max-width: 48px;
+    max-width:48px;
     height: auto;
     opacity: 0.8;
     transition: all 0.2s ease;
-    border-radius: 12px;
-    
 }
 
 .stack-logo:hover {
@@ -170,7 +168,7 @@ nav a:hover {
 
 @media (max-width: 768px) {
     .stack-logo {
-        width: 80px;
+        max-width: 48px;
     }
 }
 
@@ -178,3 +176,12 @@ nav a:hover {
 .dark-theme .stack-logo {
     filter: brightness(0) invert(1);
 }
+
+/* Improved SVG logo styling for theme compatibility */
+.svg-logo {
+    filter: none !important; /* Remove default filter */
+    color: var(--text-color); /* Inherit text color */
+    width: 120px;
+    height: 32px;
+}
+
