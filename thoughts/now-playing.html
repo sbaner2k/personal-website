@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Now Playing - Shantanu Banerjee</title>
+    <link rel="icon" type="image/png" href="../assets/20250110_174112.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="thoughts.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FF75XJ4H6G"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-FF75XJ4H6G');
+    </script>
+    <style>
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            padding: 8px 16px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            opacity: 0.8;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        main {
+            margin-top: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .article-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .article-content h2 {
+            margin-bottom: 1.5rem;
+        }
+        .article-content h3 {
+            margin-bottom: 1.5rem;
+            color: #CED4DA;
+        }
+        .content-divider {
+            border: none;
+            border-top: 1px solid #CED4DA;
+            margin: 2rem 0;
+            width: 100%;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
+            color: #CED4DA;
+        }
+        .track-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        
+        .music-platforms {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        .platform-icon {
+            height: 32px;
+            width: auto;
+        }
+
+        /* Mobile styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .article-content {
+                max-width: 100%;
+                padding: 1.5rem;
+            }
+            
+            .music-platforms {
+                justify-content: flex-end;
+                gap: 0.5rem;
+            }
+            
+            .platform-icon {
+                height: 24px;
+            }
+            
+            .back-button {
+                left: 1rem;
+                top: 1rem;
+                padding: 6px 12px;
+            }
+        }
+
+        /* Tablet styles */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .article-content {
+                padding: 1.5rem;
+            }
+            
+            .track-info {
+                
+                align-items: flex-start;    
+                gap: 1rem;
+            }
+        
+            
+            .music-platforms {
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body class="dark-theme">
+    <div class="container">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-icon"></span>
+        </button>
+        
+        <a href="../thoughts/index.html" class="back-button">← Back</a>
+
+        <main class="thoughts-container">
+            <article class="article-content">
+                <h1>Now Playing</h1>
+                <div id="now-playing-content">
+                    <div class="track-info">
+                        <h3>Track #1: Innerbloom by RÜFÜS DU SOL</h3>
+                        <div class="music-platforms">
+                            <a href="https://music.youtube.com/watch?v=D4qZeU9ZYl0&si=Aq3LDq1O_v5MrC0x" target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/yt-music.png" alt="YouTube Music" class="platform-icon">
+                            </a>
+                            <a href="https://open.spotify.com/track/5rpx047aanR0h9Rfp1wgBB?si=c90339ba91904ed4" target="_blank" rel="noopener noreferrer">
+                                <img src="../assets/spotify.png" alt="Spotify" class="platform-icon">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <hr class="content-divider">
+                    
+                    <p>I grew up listening to music of varied genres and languages and have developed a profound association with it. I wouldn't shy away from telling it has played an important part in my life. I might get a tattoo <q>Music saved me</q> to prove a point.</p>
+                    
+                    <p>This series is an experiment: can the song in my headphones steer the words on your screen? Each post will name the track(s) I'm looping so you can hit play and read in sync. Think of it as sharing earbuds across the internet. Ultimately, setting the tone and theme for the rendering. This might not make sense on day zero but is one of those dear things I will continue to extend in future.</p>
+                    
+                    <p>On a side note, I strongly believe people who introduce you new music are important and this is my attempt.</p>
+                    
+                    <p>(Inspired by Ben Horowitz's <cite><a href="https://www.amazon.in/Hard-Thing-About-Things-Building-ebook/dp/B00DQ845EA/ref=sr_1_1?crid=7GUD61TS633X&dib=eyJ2IjoiMSJ9.xwX0vd96iUfDtpD_RZFdARFs0QiQJko8AhVjJZjg8jT8YLTl_08lsGrOGxHVgie12-wb18n65AKlTBpOhtXtNZqs2h5vtm-rr8xmZs3WlDchgUGiDWt-BpKMwK4ejel1IRous4GAGEqDGRDQr0y5iwvkKMn89f__hpsAlQUoRRxoqy7qA6HNkhW8gttT4o3sM5-umNiByK_bKQjh5R-fAKP5dNY8Jv-1w-uraZjo_M0.c4Tgj4BU5QEAhyXHaZ2VfUCjpnrH43PHr8FEgHwOOKo&dib_tag=se&keywords=hard+things+about+hard+things+kindle&qid=1749406676&sprefix=hard+thin%2Caps%2C288&sr=8-1">The Hard Thing About Hard Things</a> </cite>)</p>
+                    
+                    <p>Back to the drawing board. See you on the next track.</p>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+</html>
